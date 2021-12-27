@@ -5,7 +5,6 @@ import {
   SafeAreaView,
   ImageBackground,
   Image,
-  Slider,
   TouchableOpacity,
 } from 'react-native';
 import Header from '../../components/header';
@@ -143,14 +142,6 @@ const Vlog = ({navigation}) => {
               }}>
               Ready, set, summer! It’s time to take the ...More
             </Text>
-            {/* <Slider
-              maximumValue={100}
-              minimumValue={0}
-              step="1"
-              value={value}
-              trackImage={require('../../assets/images/slider.png')}
-              onValueChange={sliderValue => setValue(sliderValue)}
-            /> */}
             <Image
               style={{width: '100%%', resizeMode: 'contain'}}
               source={require('../../assets/images/slider.png')}></Image>
