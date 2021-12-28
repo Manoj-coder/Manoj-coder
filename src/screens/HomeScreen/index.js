@@ -7,6 +7,7 @@ import {toggleReguireLogin} from '../../redux/globalStore';
 import TabScreen from '../TabScreen';
 import ProfileScreen from '../ProfileScreen/index';
 import ShopScreen from '../Shop/index';
+import ProductScreen from '../ProductScreen';
 
 export default function HomeScreen() {
   const index = useSelector(state => state.homeScreen.indexBottomBar);
@@ -17,7 +18,8 @@ export default function HomeScreen() {
       {index === 0 && <TabScreen />}
       {index === 1 && <ShopScreen />}
       {index === 2 && <Text>Video</Text>}
-      {index === 3 && <Text>Notification</Text>}
+      {/* {index === 3 && <Text>Notification</Text>} */}
+      {index === 3 && <ProductScreen />}
       {index === 4 && <ProfileScreen />}
       <Box
         style={{position: 'absolute', width: '100%', bottom: 0, height: 50}}

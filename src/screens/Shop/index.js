@@ -18,8 +18,8 @@ import {Actionsheet} from 'native-base';
 
 export default function App() {
   const [tab, setTab] = useState(0);
-  const [isShowing, setIsShowing] = useState(true);
-  const [tabSlider, setTabSlider] = useState(1);
+  const [isShowing, setIsShowing] = useState(false);
+  const [tabSlider, setTabSlider] = useState(0);
   const _renderItem = ({item}) => {
     return (
       <View style={{maxHeight: '100%'}}>
