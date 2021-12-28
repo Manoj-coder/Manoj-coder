@@ -1,14 +1,14 @@
 import React, {Component, StrictMode} from 'react';
 import {Provider} from 'react-redux';
-import { store } from './redux/store'
-import { NativeBaseProvider, Box } from 'native-base';
+import {store} from './redux/store';
+import {NativeBaseProvider, Box} from 'native-base';
 import {View, StyleSheet} from 'react-native';
-import MainScreen from './screens/MainScreen'
+import MainScreen from './screens/MainScreen';
+console.disableYellowBox = true;
 
 class App extends Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
@@ -17,7 +17,7 @@ class App extends Component {
         <View style={styles.container}>
           <Provider store={store}>
             <NativeBaseProvider>
-                <MainScreen/>
+              <MainScreen />
             </NativeBaseProvider>
           </Provider>
         </View>
